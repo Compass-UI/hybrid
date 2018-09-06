@@ -22,6 +22,7 @@ angular.module('myApp.view2', ['ngRoute'])
   couponData.getCoupon().
   success(function(data, status, headers, config){
     console.log(data);
+    $scope.data = data;
     console.log(status);
     console.log(headers);
     console.log(config);
