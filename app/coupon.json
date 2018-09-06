@@ -1,10 +1,10 @@
 {
-    "Coupon #": 1,
+    "Coupon": 1,
     "Flight": "UA 1742",
     "Date":	"08/01/2018",
     "Segment": "ORD-SFO",
     "Class": "S",
-    "Issued By": "UA",
+    "IssuedBy": "UA",
     "Status": "Adjusted",
     "Detail": "/$*AQUINOACEVEDO/VERONICAMA UA      CPN 1 UA      USED UA       01623471516225",
     "l2": "CHICAGO OHARE UA      ORD/ORD UA      7MAY17 ",

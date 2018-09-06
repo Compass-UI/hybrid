@@ -1,30 +1,21 @@
 <p>This is the partial for view 2.</p>
 <p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
+  Showing of 'interpolate' filter: {{ 'Current version is v%VERSION%.' | interpolate }}
+</p>
+
   <pre>
     {{data | json }}
   </pre>
-  <table class="table">
+  <table class="table ">
     <thead>
-
+        <th>"Coupon #"</th>
+          <th>"Flight"</th>
+          <th>"Date"</th>
+          <th>"Segment"</th>
+          <th>"Class"</th>
+          <th>"Issued By"</th>
+          <th>"Status"</th>
     </thead>
-    <th></th>
-    <th>"Coupon #"
-        </th>
-    <th>"Flight"
-        </th>
-    <th>"Date"
-        </th>
-    <th>"Segment"
-        </th>
-    <th>"Class"
-        </th>
-    <th>"Issued By"
-        </th>
-    <th>"Status"
-        </th>
-    <th>"Detail"</th>"
     <tr>
       <td>{{data.Coupon}}</td>
       <td>{{data.Flight}}</td>
@@ -35,8 +26,6 @@
       <td>{{data.Status}}</td>
     </tr>
     <tr>
-      <td>{{data.Detail}}</td>
+      <td colspan="7">{{data.Detail}}</td>
     </tr>
-  "Detail": 
   </table>
-</p>
