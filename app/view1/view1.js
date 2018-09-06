@@ -9,6 +9,16 @@ angular.module('myApp.view1', ['ngRoute'])
   });
 }])
 
-.controller('View1Ctrl', [function() {
+.controller('View1Ctrl', ['$scope', 'Coupon', function($scope, Coupon) {
+
+  $scope.label = 'Expand/Collapse';
+
+  $scope.expandCoupon = function(){
+    alert('expandCoupon', 'Must handle SyntaxError: Unexpected token ` in JSON at position 179')
+    console.log(Coupon.get({}, function(coupon){
+      console.log(coupon);
+    }));
+  }
+
 
 }]);

@@ -1,3 +1,4 @@
+///<reference path='../bower_components/angular/angular.js' />
 'use strict';
 
 angular.module('myApp.view2', ['ngRoute'])
@@ -9,6 +10,24 @@ angular.module('myApp.view2', ['ngRoute'])
   });
 }])
 
-.controller('View2Ctrl', [function() {
+.factory('couponData', function($http, $log){
+  return {
+    getCoupon: function() {
+      return $http({method: 'GET', url: '../coupon.json'})
+    }
+  }
+})
+
+.controller('View2Ctrl', ['$scope', 'couponData', '$log', function($scope, couponData, $log) {
+  couponData.getCoupon().
+  success(function(data, status, headers, config){
+    console.log(data);
+    console.log(status);
+    console.log(headers);
+    console.log(config);
+  }).
+  error(function(data, status, headers, config){
+    $log.warn(date, status, headers(), config)
+  })
 
 }]);
