@@ -1,7 +1,11 @@
 ///<reference path='../bower_components/angular/angular.js' />
 'use strict';
 
-angular.module('myApp.view2', ['ngRoute', 'ngResource'])
+angular.module('myApp.view2', [
+  'ngRoute', 
+  'ngResource',
+  'ui.bootstrap.demo'
+])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view2', {

@@ -6,7 +6,7 @@ angular.module('myApp', [
   'ngResource',
   'myApp.view1',
   'myApp.view2',
-  'myApp.version'
+  'myApp.version',
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
