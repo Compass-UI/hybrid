@@ -1,3 +1,202 @@
 <p>This is the partial for view 1.</p>
 
 <button ng-click="expandCoupon()">{{label}}</button>
+<table class="table">
+
+    <tr>
+        <td class="expand-column">
+            <span ng-click="$ctrl.icketing1Coupon1Details = !$ctrl.ticketing1Coupon1Details">
+                <a>
+                    <i ng-click="expandCoupon()" class="fa fa-plus-circle link" ng-class="{'fa-minus-circle': $ctrl.ticketingCoupon1Details}"></i>
+                </a>
+            </span>
+        </td>
+        <td>1</td>
+        <td>UA 1742</td>
+        <td>08/01/2018</td>
+        <td>ORD-SFO</td>
+        <td>S</td>
+        <td>UA</td>
+        <td style="color: #357D3F">Active</td>
+    </tr>
+</table>
+<div id="accordion" class="panel-group">
+
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <div class="panel-title"><a href="#first"
+                data-tobble="collapse"
+                data-parent="#accordion">First</a>
+
+            </div>
+        </div>
+        <div class="panel-collapse collapse" id="first">
+            <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel excepturi eius est laboriosam, corporis atque, ipsam dolorem vitae sapiente necessitatibus cupiditate possimus magnam ab repellat modi, quibusdam a sit?</p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="panel-title"><a href="#second"
+                    data-tobble="collapse"
+                    data-parent="#accordion">Second</a>
+    
+                </div>
+            </div>
+            <div class="panel-collapse collapse" id="second">
+                <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel excepturi eius est laboriosam, corporis atque, ipsam dolorem vitae sapiente necessitatibus cupiditate possimus magnam ab repellat modi, quibusdam a sit?</p>
+                </div>
+            </div>
+    </div>
+    
+</div>
+
+
+
+<!-- Latest compiled and minified Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="https://s3-us-west-2.amazonaws.com/s.cdpn.io/11219/woorks-style.css">
+
+<div class = "container">
+
+<!--   
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            <span class="glyphicon glyphicon-flag text-success"></span>折りたたみグループアイテム #1
+            <span class="glyphicon glyphicon-chevron-up pull-right"></span>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">１個目の内容</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+            <span class="glyphicon glyphicon-flag text-info"></span>折りたたみグループアイテム #2
+            <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body">２個目の内容</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+            <span class="glyphicon glyphicon-flag text-danger"></span>折りたたみグループアイテム #3
+            <span class="glyphicon glyphicon-chevron-down pull-right"></span>
+          </a>
+        </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body">３個目の内容</div>
+      </div>
+    </div>
+  </div>
+   -->
+  
+   <ul class="nav nav-pills navbar-default">
+       <li id="One" class="collapse"><a href="#One1" data-toggle="collapse">One</a></li>
+       <li id="Two" class="collapse"><a href="#Two2" data-toggle="collapse">Two</a></li>
+       <li id="Three" class="collapse"><a href="#Three3" data-toggle="collapse">Three</a></li>
+   </ul>
+   <div id="One1" class="collapse"><h1>One</h1></div>
+   <div id="Two2" class="collapse"><h1>Two</h1></div>
+   <div id="Three3" class="collapse"><h1>Three</h1></div>
+
+   <a href="#myModal" class="btn btn-infor" data-toggle="modal">Open Modal</a>
+   <div class="modal fade" id="myModal">
+       <div class="modal-dialog">
+           <div class="content">Contne</div>
+           <div class="header">Header</div>
+           <div class="body">
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, error reprehenderit assumenda culpa est alias dolore facere debitis explicabo facilis ab corporis aliquid fugit a blanditiis molestias dolores excepturi porro.</p>
+           </div>
+           <div class="fotter">fotter
+               <button class="btn btn-success">Success</button>
+           </div>
+       </div>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit dolore dolores laborum labore non, sint molestias accusantium provident perspiciatis, quasi sit doloremque rerum excepturi facere eveniet! Neque reprehenderit ex magni?</p>
+   </div>
+</div> <!-- end container -->
+
+<script>
+//       (function($) {
+//     'use strict';
+//     $('#collapseOne, #collapseTwo, #collapseThree').on({
+//       // 折り畳み開く処理
+//       'show.bs.collapse': function() {
+//         $('a[href="#' + this.id + '"] span.glyphicons-chevron-down')
+//           .removeClass('glyphicons-chevron-down')
+//           .addClass('glyphicons-chevron-up');
+//       },
+//       // 折り畳み閉じる処理
+//       'hide.bs.collapse': function() {
+//         $('a[href="#' + this.id + '"] span.glyphicon-chevron-up')
+//           .removeClass('glyphicons-chevron-up')
+//           .addClass('glyphicons-chevron-down');
+//       }
+//     });
+//   })(jQuery);
+</script>
+
+
+
+<div id="accordion" class="panel-group">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <a href="#first" data-toggle="collapse" data-parent="#accordion">First</a>
+            </div>
+          </div>
+          <div class="panel-collapse collapse in" id="first">
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde soluta numquam eius, nemo veniam fuga alias, neque nisi sapiente facere accusantium sit delectus dolorem voluptas earum autem accusamus porro deserunt!</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <a href="#second" data-toggle="collapse" data-parent="#accordion">Second</a>
+            </div>
+          </div>
+          <div class="panel-collapse collapse" id="second">
+            <div class="panel-body">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ullam atque asperiores dignissimos iusto cum sequi, tenetur explicabo temporibus perspiciatis sed quis adipisci ipsum esse numquam laboriosam ipsam modi inventore!</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <a href="#third" data-toggle="collapse" data-parent="#accordion">Third</a>
+            </div>
+          </div>
+          <div class="panel-collapse collapse" id="third">
+            <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium consequuntur dolores eius ipsam ad ratione sint adipisci, eos qui maiores. Libero maiores exercitationem mollitia esse iure. Accusamus, iusto velit. Quam!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+<!-- Latest compiled and minified JavaScript -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> -->
+<!-- <script src="https://use.fontawesome.com/df678b889c.js"></script> -->
