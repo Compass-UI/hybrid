@@ -25,7 +25,7 @@
     <div class="panel panel-info">
         <div class="panel-heading">
             <div class="panel-title"><a href="#first"
-                data-tobble="collapse"
+                data-toggle="collapse"
                 data-parent="#accordion">First</a>
 
             </div>
@@ -56,11 +56,17 @@
     
 </div>
 
+<div class="alert alert-danger">alert-danger</div>
+<div class="alert alert-warning">alert-warning</div>
+<div class="alert">alert default</div>
+<div id="abc" class="alert alert-info">alert-info
+    <a href="#abc" data-dismiss="alert" class="close">x</a>
+</div>
 
 
 <!-- Latest compiled and minified Bootstrap CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="https://s3-us-west-2.amazonaws.com/s.cdpn.io/11219/woorks-style.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<!-- <link rel="https://s3-us-west-2.amazonaws.com/s.cdpn.io/11219/woorks-style.css"> -->
 
 <div class = "container">
 
@@ -133,19 +139,20 @@
    </div>
 
 
-   <ul class="nav nav-tabs">
+   <ul class="nav nav-tabs nav-justified">
        <li><a href="#tab1" data-toggle="tab">Tab 1</a></li>
        <li><a href="#tab2" data-toggle="tab">Tab 2</a></li>
        <li><a href="#tab3" data-toggle="tab">Tab 3</a></li>
    </ul>
    <div class="tab-content">
     <div id="tab1" class="tab-pane">
-        <h1>Tab 1</h1>
+        <h1>First Tab</h1>
     </div>
-    <div id="tab2" class="tab-pane">
-        <h1>Tab 2</h1>
+    <div id="tab2" class="tab-pane active">
+        <h1>Secont Tab - Active</h1>
     </div>
     <div id="tab3" class="tab-pane">
+        <h1>Third Tab</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus earum commodi saepe, eligendi molestiae repellendus aliquam quaerat, corporis nam magni nostrum iusto ducimus minus officia perspiciatis reprehenderit veritatis expedita natus?</p>
     </div>
    </div>
